@@ -3,5 +3,5 @@ Repositorio OT kurssia varten
 
 ## Laskarit
 ### Viikkko 1
-[komentorivi.txt]()
-[gitlog.txt]()
+[komentorivi.txt](https://github.com/sinyman/OT-Harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+[gitlog.txt](https://github.com/sinyman/OT-Harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
