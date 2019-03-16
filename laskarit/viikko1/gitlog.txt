@@ -1,0 +1,50 @@
+commit 7fcddf74bf3f17eb1cfc8a6afc2e5c4804b21e67
+Author: Simon Nyman <nyman.simon@hotmail.com>
+Date:   Sat Mar 16 13:32:26 2019 +0200
+
+    Removed file1 and renamed file2
+
+ tiedostoja/file2.txt                 | 0
+ tiedostoja/{file1.txt => file22.txt} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit a3592e88c2468d223fe5e2ddbcd61d1c0c03b031
+Author: Simon Nyman <nyman.simon@hotmail.com>
+Date:   Sat Mar 16 13:24:47 2019 +0200
+
+    Added directory tiedostoja and 3 empty files in it
+
+ tiedostoja/file1.txt | 0
+ tiedostoja/file2.txt | 0
+ tiedostoja/file3.txt | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit be6499b96bfc7b7e134bd31b7effb736610bbd2c
+Author: Simon Nyman <nyman.simon@hotmail.com>
+Date:   Sat Mar 16 12:48:42 2019 +0200
+
+    Added README.md
+
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit a5604f4bbffcc5288a9eab3166ebee75897a29be
+Author: Simon Nyman <nyman.simon@hotmail.com>
+Date:   Sat Mar 16 12:42:36 2019 +0200
+
+    Added toinen and added content to tiedosto.txt
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 978bd1a6b2b8219622b3d61dcaaad84f3ff7435a
+Author: Simon Nyman <nyman.simon@hotmail.com>
+Date:   Sat Mar 16 12:40:27 2019 +0200
+
+    Added tiedosto.txt
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+Voi olla että tästä puuttuu jotain tehtävänantoa, ja tekosyy siihen on että git on minulle jo ennestään sen verran tuttua(kursseista TSoHa, OhTu) etten viitsinyt tehdä kaikki triviaalit tehtävät ajan puutteen takia.
