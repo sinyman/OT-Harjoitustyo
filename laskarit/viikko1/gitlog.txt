@@ -50,4 +50,4 @@ Date:   Sat Mar 16 12:40:27 2019 +0200
 Voi olla että tästä puuttuu jotain tehtävänantoa, 
 ja tekosyy siihen on että git on minulle jo ennestään sen verran tuttua(kursseista TSoHa, OhTu)
 etten viitsinyt tehdä kaikki triviaalit tehtävät ajan puutteen takia.
-
+this is also just some text that i add to cause a merge conflict, but done from GitHub
