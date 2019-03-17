@@ -1,0 +1,18 @@
+
+#gridPane {
+    -fx-background-image: url("../images/bg_image.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1920 1080;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+    
+}
+
+.logintext {
+    -fx-text-fill: #38CBE2;
+    -fx-font-weight: bold;
+}
+
+.button {
+    -fx-font-weight: bold;
+}
