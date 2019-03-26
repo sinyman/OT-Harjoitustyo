@@ -18,6 +18,8 @@ Alkuvaihessa sovelluksella on ainoastaan yksi käyttäjärooli, eli peruskäytt�
 - Käyttäjä voi tallentaa osakkeet omaan pörssiin
 	* Käyttäjä voi lisätä tallennustilantessa myös ostoshinta että voitot voidaan laskea
 - Käyttäjä voi tarkkailla omat osakeostokset ja helposti nähdä voitot/tappiot
+	* Tarkkailu tehdään helpommaksi diagrammien ja taulukoiden avulla
+- Käyttäjä voi kirjautua ulos järjestelmästä
 
 ## Jatkokehitysideoita
 - Mahdollisesti voisi lisätä myös toiminnallisuus tarkkailla osakekurssit ilman sisäänkirjautumista
