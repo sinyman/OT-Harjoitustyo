@@ -8,10 +8,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
-import java.lang.StringBuffer;
-
 import org.json.JSONObject;
-import org.json.JSONArray;
 
 public class StocksDAO {
 
@@ -34,19 +31,13 @@ public class StocksDAO {
   public String getStocksData2(String symbol) throws MalformedURLException, IOException {
     JSONObject json = getJSON(symbol);
 
-    JSONArray array = json.getJSONArray("Time Series (30min)");
-
-    String closeValues = "";
-    for(int i = 0; i < array.length(); i++) {
-      closeValues += array.getJSONObject(i).getString("4. close") + ", ";
-    }
-    //JSONObject time_series = new JSONObject(json.getJSONObject("Time Series").toString());
-    //return "Metadata: "+time_series.getString("2. Symbol");
-    return closeValues;
+    JSONObject time_series = new JSONObject(json.getJSONObject("Time Series (Daily)").toString());
+    JSONObject obj = new JSONObject(time_series.getJSONObject("2019-04-16").toString());
+    return "Obj: "+obj.getDouble("4. close");
   }
 
   private String makeURL(String symbol) {
-    String apiURL = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY"
+    String apiURL = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY"
                       + "&symbol="+ symbol
                       + "&interval=30min"
                       + "&apikey="+apikey;
@@ -65,7 +56,7 @@ public class StocksDAO {
     BufferedReader webInput = new BufferedReader(new InputStreamReader(connection.getInputStream()));
 
     String inputLine;
-    StringBuffer response = new StringBuffer();
+    StringBuilder response = new StringBuilder();
 
     // Going through the lines in the response and adding it to a
     // StringBuffer-object so I can later get the entire response as a String

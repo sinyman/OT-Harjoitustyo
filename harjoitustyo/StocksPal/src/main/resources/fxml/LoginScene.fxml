@@ -1,30 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane fx:controller="sinyman.stockspal.FXMLController"
-    xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" fx:id="gridPane">
 
-    <Label text="Welcome! Please log in" styleClass="logintext" />
-
-    <Label text="User Name:"
-        GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="logintext" />
-
-    <TextField
-        GridPane.columnIndex="1" GridPane.rowIndex="1" />
-
-    <Label text="Password:"
-        GridPane.columnIndex="0" GridPane.rowIndex="2" styleClass="logintext" />
-
-    <PasswordField fx:id="passwordField"
-        GridPane.columnIndex="1" GridPane.rowIndex="2" />
-
-    <Button GridPane.columnIndex="0" GridPane.rowIndex="3" text="Login" onAction="#handleButtonAction" />
-
-    <Label GridPane.columnIndex="1" GridPane.rowIndex="4" minHeight="16" minWidth="69" styleClass="logintext" fx:id="label" />
-
-</GridPane>
+<AnchorPane id="AnchorPane" fx:id="gridPane" prefHeight="1080.0" prefWidth="1920.0"
+            stylesheets="@../styles/Styles.css" xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/8" fx:controller="sinyman.stockspal.FXMLController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="410.0" layoutX="906.0" layoutY="522.0" opacity="0.4" stroke="#1e1e1e" strokeType="INSIDE" width="746.0" />
+      <Label fx:id="unameLabel" alignment="TOP_LEFT" layoutX="948.0" layoutY="576.0" prefHeight="45.0" prefWidth="252.0" text="Username:">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="unameLabel1" alignment="CENTER" layoutX="948.0" layoutY="695.0" prefHeight="50.0" prefWidth="156.0" text="Password:">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pwField" alignment="CENTER" layoutX="948.0" layoutY="750.0" prefHeight="55.0" prefWidth="500.0" />
+      <TextField fx:id="unameField" alignment="TOP_LEFT" layoutX="948.0" layoutY="633.0" prefHeight="55.0" prefWidth="500.0" />
+      <Button contentDisplay="RIGHT" layoutX="948.0" layoutY="829.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="145.0" text="Log in" onAction="#handleLogin">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="116.0" layoutY="172.0" text="StocksPal™">
+         <font>
+            <Font size="69.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="284.0" prefHeight="51.0" prefWidth="863.0" text="The ONLY application YOU will ever need to keep your investments in check" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Line endX="800.0" fill="#03a0f5" layoutX="180.0" layoutY="273.0" startX="-100.0" strokeWidth="3.0" />
+   </children>
+</AnchorPane>
