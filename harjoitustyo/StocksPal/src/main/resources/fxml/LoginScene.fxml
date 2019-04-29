@@ -9,39 +9,36 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" fx:id="gridPane" prefHeight="1080.0" prefWidth="1920.0"
-            stylesheets="@../styles/Styles.css" xmlns:fx="http://javafx.com/fxml/1"
-            xmlns="http://javafx.com/javafx/8" fx:controller="sinyman.stockspal.FXMLController">
+<AnchorPane id="anchorPane" fx:id="anchorPane" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sinyman.stockspal.FXMLController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="410.0" layoutX="906.0" layoutY="522.0" opacity="0.4" stroke="#1e1e1e" strokeType="INSIDE" width="746.0" />
-      <Label fx:id="unameLabel" alignment="TOP_LEFT" layoutX="948.0" layoutY="576.0" prefHeight="45.0" prefWidth="252.0" text="Username:">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#15c4ff" height="410.0" layoutX="906.0" layoutY="522.0" opacity="0.4" stroke="#1e1e1e" strokeType="INSIDE" width="746.0" />
+      <Label fx:id="unameLabel" alignment="TOP_LEFT" layoutX="948.0" layoutY="576.0" prefHeight="45.0" prefWidth="252.0" text="Username" textFill="#00fdff">
          <font>
             <Font size="34.0" />
          </font>
       </Label>
-      <Label fx:id="unameLabel1" alignment="CENTER" layoutX="948.0" layoutY="695.0" prefHeight="50.0" prefWidth="156.0" text="Password:">
+      <Label fx:id="unameLabel1" alignment="CENTER" layoutX="917.0" layoutY="698.0" prefHeight="50.0" prefWidth="226.0" text="Password" textFill="#00fdff">
          <font>
             <Font size="34.0" />
          </font>
       </Label>
       <PasswordField fx:id="pwField" alignment="CENTER" layoutX="948.0" layoutY="750.0" prefHeight="55.0" prefWidth="500.0" />
       <TextField fx:id="unameField" alignment="TOP_LEFT" layoutX="948.0" layoutY="633.0" prefHeight="55.0" prefWidth="500.0" />
-      <Button contentDisplay="RIGHT" layoutX="948.0" layoutY="829.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="145.0" text="Log in" onAction="#handleLogin">
+      <Button contentDisplay="RIGHT" layoutX="948.0" layoutY="829.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="46.0" prefWidth="145.0" text="Log in">
          <font>
-            <Font size="22.0" />
+            <Font size="29.0" />
          </font>
       </Button>
-      <Label layoutX="116.0" layoutY="172.0" text="StocksPal™">
+      <Label layoutX="84.0" layoutY="189.0" text="StocksPal™" textFill="#15c4ff">
          <font>
             <Font size="69.0" />
          </font>
       </Label>
-      <Label layoutX="103.0" layoutY="284.0" prefHeight="51.0" prefWidth="863.0" text="The ONLY application YOU will ever need to keep your investments in check" wrapText="true">
+      <Label layoutX="79.0" layoutY="271.0" prefHeight="51.0" prefWidth="863.0" text="The ONLY application YOU will ever need to keep your investments in check" textFill="#15c4ff" wrapText="true">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Line endX="800.0" fill="#03a0f5" layoutX="180.0" layoutY="273.0" startX="-100.0" strokeWidth="3.0" />
+      <Line endX="800.0" fill="#f2001c" layoutX="180.0" layoutY="273.0" startX="-100.0" stroke="#15c4ff" strokeWidth="3.0" />
    </children>
 </AnchorPane>

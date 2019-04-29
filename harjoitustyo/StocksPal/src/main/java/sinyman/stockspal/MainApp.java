@@ -7,6 +7,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.awt.Toolkit;
+
 
 public class MainApp extends Application {
 
@@ -14,15 +16,22 @@ public class MainApp extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/LoginScene.fxml"));
 
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root/*, x, y*/);
         scene.getStylesheets().add("/styles/Styles.css");
 
         stage.setTitle("StocksPal - Osakeseurantajärjestelmä");
+
+        // Getting screensize and setting application
+        // window size accordingly
+        Toolkit tk = Toolkit.getDefaultToolkit();
+        int x = (int) tk.getScreenSize().getWidth();
+        int y = (int) tk.getScreenSize().getHeight();
+        stage.setWidth(x);
+        stage.setHeight(y);
+
         stage.setScene(scene);
 
-        // Setting max window size to fit backround image
-        stage.setMaxWidth(1920);
-        stage.setMaxHeight(1080);
+        stage.hide();
         stage.show();
     }
 
