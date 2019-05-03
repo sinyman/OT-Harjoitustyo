@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.image.*?>
@@ -9,22 +10,22 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="anchorPane" fx:id="anchorPane" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sinyman.stockspal.FXMLController">
+<AnchorPane id="anchorPane" fx:id="anchorPane" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sinyman.stockspal.LoginSceneController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#15c4ff" height="410.0" layoutX="906.0" layoutY="522.0" opacity="0.4" stroke="#1e1e1e" strokeType="INSIDE" width="746.0" />
-      <Label fx:id="unameLabel" alignment="TOP_LEFT" layoutX="948.0" layoutY="576.0" prefHeight="45.0" prefWidth="252.0" text="Username" textFill="#00fdff">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#15c4ff" height="460.0" layoutX="713.0" layoutY="453.0" opacity="0.4" stroke="#1e1e1e" strokeType="INSIDE" width="815.0" />
+      <Label fx:id="unameLabel" alignment="TOP_LEFT" layoutX="766.0" layoutY="489.0" prefHeight="45.0" prefWidth="252.0" text="Username" textFill="#00fdff">
          <font>
             <Font size="34.0" />
          </font>
       </Label>
-      <Label fx:id="unameLabel1" alignment="CENTER" layoutX="917.0" layoutY="698.0" prefHeight="50.0" prefWidth="226.0" text="Password" textFill="#00fdff">
+      <Label fx:id="unameLabel1" alignment="CENTER" layoutX="735.0" layoutY="611.0" prefHeight="50.0" prefWidth="226.0" text="Password" textFill="#00fdff">
          <font>
             <Font size="34.0" />
          </font>
       </Label>
-      <PasswordField fx:id="pwField" alignment="CENTER" layoutX="948.0" layoutY="750.0" prefHeight="55.0" prefWidth="500.0" />
-      <TextField fx:id="unameField" alignment="TOP_LEFT" layoutX="948.0" layoutY="633.0" prefHeight="55.0" prefWidth="500.0" />
-      <Button contentDisplay="RIGHT" layoutX="948.0" layoutY="829.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="46.0" prefWidth="145.0" text="Log in">
+      <TextField fx:id="unameField" alignment="CENTER" layoutX="766.0" layoutY="546.0" prefHeight="55.0" prefWidth="500.0" />
+      <PasswordField fx:id="pwField" alignment="CENTER" layoutX="766.0" layoutY="663.0" prefHeight="55.0" prefWidth="500.0" />
+      <Button contentDisplay="RIGHT" layoutX="766.0" layoutY="742.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="46.0" prefWidth="145.0" text="Log in">
          <font>
             <Font size="29.0" />
          </font>
@@ -40,5 +41,18 @@
          </font>
       </Label>
       <Line endX="800.0" fill="#f2001c" layoutX="180.0" layoutY="273.0" startX="-100.0" stroke="#15c4ff" strokeWidth="3.0" />
+      <Button fx:id="registerButton" contentDisplay="RIGHT" layoutX="922.0" layoutY="742.0" mnemonicParsing="false" onAction="#handleRegistration" prefHeight="63.0" prefWidth="276.0" text="Register account">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorLabel" layoutX="767.0" layoutY="806.0" prefHeight="76.0" prefWidth="514.0" textFill="#f53162" wrapText="true">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+         <effect>
+            <DropShadow height="25.0" radius="12.0" spread="0.36" width="25.0" />
+         </effect>
+      </Label>
    </children>
 </AnchorPane>

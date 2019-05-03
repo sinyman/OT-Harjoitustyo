@@ -1,22 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.chart.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1031.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sinyman.stockspal.MainSceneController">
    <left>
-      <VBox prefHeight="1080.0" prefWidth="292.0" BorderPane.alignment="CENTER" />
+      <VBox prefHeight="703.0" prefWidth="292.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="symbolSearch" onKeyPressed="#applyStocksDataFromSearch" promptText="Search by symbol" />
+            <Label prefHeight="17.0" prefWidth="308.0" text="Top rated stocks" underline="true">
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="377.0" text="AAPL">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="377.0" text="MSFT">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="377.0" text="GOOGL">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="377.0" text="FB">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="377.0" text="NOK">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+         </children></VBox>
    </left>
    <top>
-      <MenuBar prefHeight="1.0" prefWidth="1920.0" BorderPane.alignment="CENTER">
+      <MenuBar fx:id="menuBar" prefHeight="1.0" prefWidth="1920.0" BorderPane.alignment="CENTER">
         <menus>
           <Menu mnemonicParsing="false" text="File">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
+               <items>
+              <MenuItem fx:id="closeButton" mnemonicParsing="false" onAction="#handleButtonAction" text="Close" />
+               </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
             <items>
@@ -27,20 +98,23 @@
       </MenuBar>
    </top>
    <bottom>
-      <LineChart BorderPane.alignment="CENTER">
+      <LineChart fx:id="dataChart" BorderPane.alignment="CENTER">
         <xAxis>
-          <CategoryAxis side="BOTTOM" />
+          <CategoryAxis label="Date" side="BOTTOM" />
         </xAxis>
         <yAxis>
-          <NumberAxis side="LEFT" />
+          <NumberAxis fx:id="yAxis" label="Price" side="LEFT" />
         </yAxis>
       </LineChart>
    </bottom>
    <center>
-      <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn fx:id="dateColumn" prefWidth="200.0" text="Date" />
+          <TableColumn fx:id="openColumn" prefWidth="100.0" text="Open" />
+            <TableColumn fx:id="highColumn" prefWidth="100.0" text="High" />
+            <TableColumn fx:id="lowColumn" prefWidth="100.0" text="Low" />
+            <TableColumn fx:id="closeColumn" prefWidth="100.0" text="Close" />
         </columns>
       </TableView>
    </center>

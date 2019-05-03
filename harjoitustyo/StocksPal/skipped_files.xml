@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE suppressions PUBLIC
+    "-//Puppy Crawl//DTD Suppressions 1.1//EN"
+    "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
+
+<suppressions>
+
+	<!-- 
+	
+	There really is nothing to skip in terms of GUI-classes
+	as all of my GUI components are declared in FXML files,
+	and those are already in a package which isn't being
+	checkedby Checkstyle
+	
+	-->
+
+</suppressions>

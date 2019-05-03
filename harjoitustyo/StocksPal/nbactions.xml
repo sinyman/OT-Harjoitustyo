@@ -37,5 +37,13 @@
                 <exec.executable>java</exec.executable>
                 <exec.classpathScope>${classPathScope}</exec.classpathScope>
             </properties>
+        </action>
+        <action>
+            <actionName>CUSTOM-checkstyle</actionName>
+            <displayName>checkstyle</displayName>
+            <goals>
+                <goal>jxr:jxr</goal>
+                <goal>checkstyle:checkstyle</goal>
+            </goals>
         </action>        
     </actions>

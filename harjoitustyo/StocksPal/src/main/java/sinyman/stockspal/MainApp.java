@@ -27,7 +27,7 @@ public class MainApp extends Application {
         int x = (int) tk.getScreenSize().getWidth();
         int y = (int) tk.getScreenSize().getHeight();
         stage.setWidth(x);
-        stage.setHeight(y);
+        stage.setHeight(y - 100);
 
         stage.setScene(scene);
 
