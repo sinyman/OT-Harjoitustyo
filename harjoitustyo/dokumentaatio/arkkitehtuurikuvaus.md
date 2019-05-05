@@ -33,8 +33,8 @@ Ohjelma avautuu komentorivissä ja ohjelmaan voit syöttää SQL-kyselyjä nähd
 
 ## Ohjelman oleellisimmat toiminnallisuudet sekvenssikaavioina
 ### Kirjautuminen
-<img src="#" alt="loginSequence.png">
+<img src="https://github.com/sinyman/OT-Harjoitustyo/blob/master/harjoitustyo/dokumentaatio/images/loginSequence.png" alt="loginSequence.png">
 ### Uuden käyttäjätilin luominen
-<img src="#" alt="RegistrationSequence.png">
+<img src="https://github.com/sinyman/OT-Harjoitustyo/blob/master/harjoitustyo/dokumentaatio/images/registrationsequence.png" alt="RegistrationSequence.png">
 ### Osakekurssin datan hankkiminen ja esittäminen
-<img src="#" alt="StocksSearchSequence.png">
+<img src="https://github.com/sinyman/OT-Harjoitustyo/blob/master/harjoitustyo/dokumentaatio/images/checkStocksSequence.png" alt="StocksSearchSequence.png">
