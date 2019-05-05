@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="1030.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sinyman.stockspal.MyStocksController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="closeButton" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" fx:id="tableView">
+        <columns>
+            <TableColumn fx:id="symbolColumn" prefWidth="75.0" text="Symbol" />
+            <TableColumn fx:id="quantityColumn" prefWidth="97.66667175292969" text="Quantity" />
+            <TableColumn fx:id="buyingPriceColumn" prefWidth="94.66667175292969" text="Buying price" />
+            <TableColumn fx:id="totalColumn" prefWidth="96.66665649414062" text="Total" />
+        </columns>
+      </TableView>
+   </center>
+   <right>
+      <VBox prefHeight="1005.0" prefWidth="665.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="32.0" prefWidth="625.0" text="Add to My Stocks" textAlignment="CENTER">
+               <font>
+                  <Font name="System Italic" size="34.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="32.0" prefWidth="625.0" text="Symbol">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="symbolField" prefHeight="38.0" prefWidth="665.0">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Label prefHeight="32.0" prefWidth="625.0" text="Price">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="priceField" prefHeight="38.0" prefWidth="665.0">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Label prefHeight="32.0" prefWidth="625.0" text="Quantity">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="quantityField" prefHeight="38.0" prefWidth="665.0">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#handleStocksSaving" prefHeight="40.0" prefWidth="200.0" text="Add to 'My Stocks'">
+               <VBox.margin>
+                  <Insets left="10.0" top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleSceneChange" prefHeight="57.0" prefWidth="217.0" text="Back to main view">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="50.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

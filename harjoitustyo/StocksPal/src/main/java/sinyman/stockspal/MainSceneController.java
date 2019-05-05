@@ -8,10 +8,14 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
+import javafx.scene.control.Button;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TableColumn;
@@ -20,6 +24,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.stage.Stage;
 import javafx.util.Pair;
 
 
@@ -43,6 +48,8 @@ public class MainSceneController implements Initializable {
     
     @FXML private TextField symbolSearch;
     
+    @FXML private Button myStocksButton;
+    
     @FXML
     private void applyStocksDataFromSearch(KeyEvent event) throws Exception {
         if (event.getCode() == KeyCode.ENTER) {
@@ -64,10 +71,25 @@ public class MainSceneController implements Initializable {
     }
     
     @FXML
+    private void handleViewChange(ActionEvent event) throws IOException {
+        Stage stage;
+        Parent rootWindow;
+        stage = (Stage) ((Button) (event.getSource())).getScene().getWindow();
+
+        rootWindow = FXMLLoader.load(getClass().getResource("/fxml/MyStocksScene.fxml"));
+
+        Scene scene = new Scene(rootWindow);
+        stage.setScene(scene);
+
+        stage.hide();
+        stage.show();
+    }
+    
+    @FXML
     private void handleButtonAction(ActionEvent event) throws IOException {  
         // Closes application    
         if (event.getSource() == closeButton) {
-            System.exit(0);
+            System.exit(0);   
         }
     }
     

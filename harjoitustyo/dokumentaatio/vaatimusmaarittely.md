@@ -16,11 +16,11 @@ Alkuvaihessa sovelluksella on ainoastaan yksi käyttäjärooli, eli peruskäytt�
 ### Kirjautumisen jälkeen
 - Käyttäjä voi selailla osakekurssit helposti diagrammien avulla
 - Käyttäjä voi tallentaa osakkeet omaan pörssiin
-	* Käyttäjä voi lisätä tallennustilantessa myös ostoshinta että voitot voidaan laskea
-- Käyttäjä voi tarkkailla omat osakeostokset ja helposti nähdä voitot/tappiot
 	* Tarkkailu tehdään helpommaksi diagrammien ja taulukoiden avulla
 - Käyttäjä voi kirjautua ulos järjestelmästä
 
 ## Jatkokehitysideoita
 - Mahdollisesti voisi lisätä myös toiminnallisuus tarkkailla osakekurssit ilman sisäänkirjautumista
-
+- Käyttäjä voi tarkkailla omat osakeostokset ja nähdä niitten voitot/tappiot
+    * Tämä oli tarkoitus olla jo perusversiossa, mutta API:n kyselyrajoituksien myötä ei ollut järkevää implementoida
+- Tulevaisuudessa olisi järkevää koodata jotain joka tallentaa jo haettuja osakekursseja, esim. tietokantaan, ettei tarvitsisi hakea uutta dataa API:sta kun halutaan nähdän toinen osakekurssi.

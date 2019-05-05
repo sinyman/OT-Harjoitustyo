@@ -2,7 +2,7 @@
 package sinyman.stockspal;
 
 public class AuthenticationManager {
-    private String userLoggedIn;
+    static String userLoggedIn;
     private DatabaseDAO dbDAO = new DatabaseDAO();
     
     public AuthenticationManager() {}
@@ -50,5 +50,4 @@ public class AuthenticationManager {
         }
         return false;
     }
-    
 }
