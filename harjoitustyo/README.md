@@ -1,7 +1,7 @@
 # StocksPal Osakeseurantajärjestelmä (OT Harjoitustyö)
 Sovelluksen avulla on mahdollista seurata osakesijoitukset ja selailla pörssiä kätevästi menemättä nettiin. Sovellukseen on mahdollista luoda käyttäjätilin, ja sen avulla voidaan selata osakket ja talleta ne omaan tiliin. Käyttäjä voi sitten sovelluksesta tarkastaa esim. oman pörssin rahallinen arvo ja mahdolliset sijoitusmahdollisuudet.
 
-<b>HUOM!</b> Huomasin viime devausviikossa, että käyttämäni API:ssa on kyselyrajoitus. Eli ei saa enemmän kuin 5 kyselyä/minuutti, ja maksimissaan 500 kyselyä/päivä. Tämä esittää projektiini käyttämiseen vaikeuksia, joten jos käytössä jotkut osakekurssit ei näy kaavioissa, on varmasti rajoitus ylitty. Sitten on vaan odotettava minuutin, ja voidaan jatkaa ohjelman käyttö taas.
+<b>HUOM!</b> Huomasin viime devausviikossa, että käyttämässäni API:ssa on kyselyrajoitus. Eli ei saa enemmän kuin 5 kyselyä/minuutti, ja maksimissaan 500 kyselyä/päivä. Tämä esittää projektiini käyttämiseen vaikeuksia, joten jos käytössä jotkut osakekurssit ei näy kaavioissa, on varmasti rajoitus ylitty. Sitten on vaan odotettava minuutin, ja voidaan jatkaa ohjelman käyttö taas.
 
 ## Dokumentaatio
 - [Käyttöohje](https://www.github.com/sinyman/OT-Harjoitustyo/blob/master/harjoitustyo/dokumentaatio/kayttoohje.md)
