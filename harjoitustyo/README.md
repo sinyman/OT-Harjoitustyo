@@ -11,7 +11,7 @@ Sovelluksen avulla on mahdollista seurata osakesijoitukset ja selailla pörssiä
 
 ## Releaset
 
-[Loppupalautus](ADD LINK HERE!!!)
+[Loppupalautus](#)
 
 ## Komentorivitoiminnot
 ### Jar-tiedoston generointi
