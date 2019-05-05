@@ -15,4 +15,4 @@
 |3.4| 9h |Checkstyle, JavaDoc, Ohjelman yhteenveto|
 |5.5| 10h |Ohjelman yhteenveto, MyStocks-näkymä + logiikka, Laajennus DatabaseDAO-luokkaan, Dokumentaation täydennys|
 
-Total: 71h
+Total: 69h
