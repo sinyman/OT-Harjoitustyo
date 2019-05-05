@@ -7,11 +7,12 @@ Sovelluksen avulla on mahdollista seurata osakesijoitukset ja selailla pörssiä
 - [Käyttöohje](https://www.github.com/sinyman/OT-Harjoitustyo/blob/master/harjoitustyo/dokumentaatio/kayttoohje.md)
 - [Vaatimusmäärittely](https://www.github.com/sinyman/OT-Harjoitustyo/blob/master/harjoitustyo/dokumentaatio/vaatimusmaarittely.md)
 - [Tuntikirjanpito](https://www.github.com/sinyman/OT-Harjoitustyo/blob/master/harjoitustyo/dokumentaatio/tuntikirjanpito.md)
+- [Arkkitehtuurikuvaus](https://www.github.com/sinyman/OT-Harjoitustyo/blob/master/harjoitustyo/dokumentaatio/arkkitehtuurikuvaus.md)
 
 
 ## Releaset
 
-[Loppupalautus](#)
+[Loppupalautus](https://github.com/sinyman/OT-Harjoitustyo/releases/tag/1.0)
 
 ## Komentorivitoiminnot
 ### Jar-tiedoston generointi
