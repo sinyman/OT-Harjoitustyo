@@ -1,5 +1,7 @@
 # Ohjelmistotekniikka 2019 Harjoitustyö
-Repositorio OT kurssia varten
+Repositorio OT kurssia varten.
+
+<b>HUOM!</b> Kaikki tiedostot mm. projektiin liittyen löytyy harjoitustyö-hakemistosta
 
 ## Laskarit
 ### Viikko 1
